@@ -1,7 +1,3 @@
-const path=require("path")
-
-
-
 const express = require("express");
 const app = express();
 require("./database");
@@ -16,11 +12,9 @@ const port = 8080;
 app.use(express.json());
 app.use(cors());
 
-app.use(express.static(path.join(__dirname,'./my-pages/build')))
 
-app.get('*',function(req,res){
-    res.sendFile(path.join(__dirname,'./my-pages/build/index.html'))
-})
+
+
 
 //register api
 app.post("/register", (request, response) => {
