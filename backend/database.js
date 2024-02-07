@@ -2,7 +2,9 @@
 const mongoose = require("mongoose");
 
 mongoose
-    .connect("mongodb://127.0.0.1:27017/loginpage", {
+mongoose.connect("mongodb+srv://akku:mongodb@cluster0.7pfufd9.mongodb.net/loginpage", {
+   
+
         
 
     })

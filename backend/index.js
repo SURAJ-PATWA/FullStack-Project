@@ -7,7 +7,7 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const User = require("./userModel");
 
-const port = 8080;
+const port = 3000;
 
 app.use(express.json());
 app.use(cors());
@@ -115,5 +115,5 @@ app.post("/login", (request, response) => {
 });
 
 app.listen(port, () => {
-    console.log("our server runing on port no 8080");
+    console.log("our server runing on port no 3000");
 });
